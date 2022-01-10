@@ -30,7 +30,7 @@ let () =
       |> signals
       |> map begin function
         | `Start_element (("http://www.w3.org/1999/xhtml", "a"), _) ->
-          `Start_element (("http://www.w3.org/1999/xhtml", "div"), [])
+          `Start_element (("http://www.w3.org/1999/xhtml", "p"), [])
         | x -> x
       end
       |> write_html
